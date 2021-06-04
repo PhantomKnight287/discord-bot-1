@@ -1,4 +1,4 @@
-FROM node:10-alpine
+FROM node:14
 COPY . .
-RUN yarn install --production
+RUN npm install --only=production
 CMD [ "node", "index.js" ]
