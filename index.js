@@ -15,6 +15,7 @@ client.on('ready', async () => {
 
 	client.registry
 		.registerDefaultTypes()
+		.registerDefaultGroups()
 		.registerGroups([
 			['util', 'Basic utility commands'],
 			['mod', 'Moderation commands such as ban, kick']
