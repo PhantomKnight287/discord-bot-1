@@ -19,6 +19,9 @@ client.on('ready', async () => {
 			['util', 'Basic utility commands'],
 			['mod', 'Moderation commands such as ban, kick']
 		])
+		.registerDefaultCommands({
+			ping: false
+		})
 		.registerCommandsIn(path.join(__dirname, 'commands'));
 });
 
