@@ -14,7 +14,7 @@
     "discord-bot",
     "discord-js"
   ],
-  "author": "Siddharth Arumugam",
+  "author": "Siddharth Arumugam <0xmrnight@gmail.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://gitlab.com/0xMrNight/discord-bot/issues"
