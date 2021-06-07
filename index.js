@@ -18,10 +18,11 @@ client.on('ready', async () => {
 		.registerDefaultGroups()
 		.registerGroups([
 			['util', 'Basic utility commands'],
-			['mod', 'Moderation commands such as ban, kick']
+			['mod', 'Moderation commands']
 		])
 		.registerDefaultCommands({
-			ping: false
+			ping: false,
+			eval: false
 		})
 		.registerCommandsIn(path.join(__dirname, 'commands'));
 });
