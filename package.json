@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://gitlab.com/0xMrNight/discord-bot.git"
+    "url": "git+https://github.com/mrnightdev/discord-bot.git"
   },
   "keywords": [
     "discord-bot",
@@ -17,9 +17,9 @@
   "author": "Siddharth Arumugam <0xmrnight@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://gitlab.com/0xMrNight/discord-bot/issues"
+    "url": "https://github.com/mrnightdev/discord-bot/issues"
   },
-  "homepage": "https://gitlab.com/0xMrNight/discord-bot#readme",
+  "homepage": "https://github.com/mrnightdev/discord-bot#readme",
   "dependencies": {
     "discord.js": "^12.5.3",
     "discord.js-commando": "^0.12.3",
