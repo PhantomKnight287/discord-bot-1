@@ -37,4 +37,10 @@ module.exports = class KickCommand extends Command {
             message.reply('I cannot ban that user.');
         }
     }
+
+    async onError(err, message) {
+        if (err = TypeError) {
+            message.reply("Please mention the user to ban!")
+        }
+    }
 }
