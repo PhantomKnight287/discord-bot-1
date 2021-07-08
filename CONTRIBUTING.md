@@ -35,6 +35,8 @@ You can [open an issue](https://gitlab.com/0xMrNight/discord-bot/-/issues/new) o
 
 ## How can I contribute?
 
+> You can refer to [this guide](https://blog.mrnight.tk/posts/github/creating-a-pr) on creating a PR.
+
 ### Setting up the dev environment
 
 - [Fork][fork] the repository
@@ -48,16 +50,12 @@ You can [open an issue](https://gitlab.com/0xMrNight/discord-bot/-/issues/new) o
   > Make sure you **do not** commit the install or build dependencies (`node_modules/`), the `.env` file or an _updated `config.json` file_. By default, the `node_modules` and `.env` are ignored by git but please be sure before committing.
 - Commit the files using `git commit -m "the commit message here"`.
 
-> Note: Increase the version numbers - `npm version {version}` and update the README file to the version this change will reprsent. The versioning scheme we use is [SemVer](https://semver.org)
+> Note: The versioning scheme we use is [SemVer](https://semver.org).
 
 ### Pushing the changes
 
 - After committing the changes, push the commits to the forked repo - `git push -u origin {branchName}`.
   > Make sure the `origin` is the forked repo. This can be verified by running `git remote`.
-
-### Creating a PR
-
-> You can refer to the GitHub docs on this topic [here][github-pr].
 
 ## License
 
