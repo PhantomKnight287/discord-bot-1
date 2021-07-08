@@ -4,7 +4,8 @@
   "description": "A discord assistant built using the discord.js library",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon ."
+    "start": "node .",
+    "dev": "nodemon ."
   },
   "repository": {
     "type": "git",
