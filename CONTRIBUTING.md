@@ -1,6 +1,8 @@
 <h1 align="center"> Contributing </h1>
 First off, thank you for considering contributing to our discord bot!
 
+### Table of Contents
+
 - [Code of Conduct](#code-of-conduct)
 - [Questions, Bugs, Features](#questions-bugs-features)
   - [Got a question?](#i-have-a-question-regarding-the-bot)
