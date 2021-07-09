@@ -1,5 +1,5 @@
 {
-  "name": "discord-bot",
+  "name": "phi-discord-bot",
   "version": "1.0.0",
   "description": "A discord assistant built using the discord.js library",
   "main": "index.js",
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mrnightdev/discord-bot.git"
+    "url": "git+https://github.com/thevynk/discord-bot.git"
   },
   "keywords": [
     "discord-bot",
@@ -18,9 +18,9 @@
   "author": "Siddharth Arumugam <0xmrnight@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/mrnightdev/discord-bot/issues"
+    "url": "https://github.com/thevynk/discord-bot/issues"
   },
-  "homepage": "https://github.com/mrnightdev/discord-bot#readme",
+  "homepage": "https://github.com/thevynk/discord-bot#readme",
   "dependencies": {
     "discord.js": "^12.5.3",
     "discord.js-commando": "^0.12.3",
