@@ -1,0 +1,19 @@
+name: Automated Deployment
+on:
+  push:
+    branches: [ master ]
+
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Make Request
+        id: myRequest
+        uses: fjogeleit/http-request-action@master
+        with:
+            url: ${{ secrets.PAYLOAD_URL }}
+      - name: Show Response
+        run: echo ${{ steps.myRequest.outputs.response }}
+
