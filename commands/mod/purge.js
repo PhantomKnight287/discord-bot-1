@@ -7,7 +7,7 @@ module.exports = class PurgeCommand extends Command {
       group: "mod",
       memberName: "purge",
       description: "Clears a number of messages",
-      aliases: ["clear", "clr"],
+      aliases: ["clear", "clr", "prune"],
       guildOnly: true,
       args: [
         {
@@ -24,10 +24,16 @@ module.exports = class PurgeCommand extends Command {
   }
 
   async run(message, { number }) {
+    const success = () => {
+      message.say(`Purged \`${number}\` messages`).then((msg) => {
+        if (msg) msg.delete({ timeout: 3000 });
+      });
+    };
+
     message.channel
       .bulkDelete(number + 1)
-      .then((msgs) => {
-        message.reply(`Purged \`${number}\` messages`);
+      .then(() => {
+        success();
       })
       .catch((e) => {
         message.reply("An error occured.");

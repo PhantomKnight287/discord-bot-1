@@ -1,5 +1,6 @@
 {
-    "prefix": "",
-    "ownerID": "",
-    "serverInvite": ""
+  "_comment": "You can add multiple owners as an array.",
+  "prefix": "",
+  "ownerID": [""],
+  "serverInvite": ""
 }
