@@ -13,7 +13,7 @@ jobs:
         id: myRequest
         uses: fjogeleit/http-request-action@master
         with:
-            url: ${{ secrets.PAYLOAD_URL }}
+            url: http://40.112.50.130:9000/hooks/redeploy
             method: 'HEAD'
       - name: Show Response
         run: echo ${{ steps.myRequest.outputs.response }}
