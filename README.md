@@ -1,6 +1,15 @@
 # Phi Discord Bot
 
-[![GitHub](https://img.shields.io/github/license/thevynk/discord-bot?color=blue)](./LICENSE)
+<p align="center">
+  <a href="./LICENSE">
+    <img alt="License" src="https://img.shields.io/github/license/thevynk/discord-bot?color=blue">
+  </a>
+  <a href="http://makeapullrequest.com">
+    <img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg">
+  </a>
+  <a href="https://github.com/discordjs/discord.js">
+    <img alt="Discord.js" src="https://img.shields.io/badge/discord-js-F7DF1E.svg">
+</p>
 
 A discord bot powered by [discord.js](https://github.com/discordjs/discord.js) and the [commando](https://github.com/discordjs/Commando) framework.
 
