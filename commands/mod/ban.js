@@ -1,4 +1,6 @@
 const { Command } = require("discord.js-commando");
+const { prefix } = require("../../config.json");
+const { MessageEmbed } = require("discord.js");
 
 module.exports = class KickCommand extends Command {
   constructor(client) {
@@ -16,6 +18,17 @@ module.exports = class KickCommand extends Command {
   }
 
   async run(message, args) {
+    const missingArgsEmbed = new MessageEmbed()
+      .setColor("#FF0000")
+      .setTitle("Missing Arguments").setDescription(`
+       	Some arguments are missing.
+        Usage: ${prefix}ban <user> <reason>
+      `);
+
+    if (args == "") {
+      return message.say(missingArgsEmbed);
+    }
+
     const target = message.mentions.users.first();
 
     var arg1 = `<@!${target.id}>`;
