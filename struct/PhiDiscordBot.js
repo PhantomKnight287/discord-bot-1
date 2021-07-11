@@ -12,8 +12,6 @@ class PhiDiscordBot extends CommandoClient {
 
     // Options for Commando Client
     this.commandPrefix = this.config.prefix;
-    this.owner = this.config.ownerID;
-    this.invite = this.config.serverInvite;
 
     this.on("ready", async () => {
       console.log(`I have logged in as ${this.user.tag} (id: ${this.user.id})`);

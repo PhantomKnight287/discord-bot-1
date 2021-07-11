@@ -1,4 +1,9 @@
 const PhiDiscordBot = require("./struct/PhiDiscordBot");
-const client = new PhiDiscordBot();
-// start the bot
+const { ownerID, serverInvite } = require("./config.json");
+
+const client = new PhiDiscordBot({
+  owner: ownerID,
+  invite: serverInvite,
+});
+
 client.start();
