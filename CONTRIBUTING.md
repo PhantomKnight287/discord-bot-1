@@ -27,15 +27,15 @@ Please do not open an issue to ask a question. Contact us on [discord][discord] 
 
 ### I found a bug in the bot
 
-If you found a bug in the code, [open an issue](https://github.com/mrnightdev/discord-bot/issues/new) or submit a pull request.
+If you found a bug in the code, [open an issue](https://github.com/thevynk/discord-bot/issues/new) or submit a pull request.
 
 ### I would like a new feature
 
-You can [open an issue](https://gitlab.com/0xMrNight/discord-bot/-/issues/new) or contact us on [discord][discord] for feature requests.
+You can [open an issue](https://github.com/thevynk/discord-bot/issues/new) or contact us on [discord][discord] for feature requests.
 
 ## How can I contribute?
 
-> You can refer to [this guide](https://blog.mrnight.tk/posts/github/creating-a-pr) on creating a PR.
+> You can refer to [this guide](https://makeapullrequest.com) on creating a PR.
 
 ### Setting up the dev environment
 
@@ -61,9 +61,9 @@ You can [open an issue](https://gitlab.com/0xMrNight/discord-bot/-/issues/new) o
 
 This project is licensed under the [MIT license][license].
 
-[coc]: https://github.com/mrnightdev/discord-bot/blob/master/CODE_OF_CONDUCT.md
-[license]: https://github.com/mrnightdev/discord-bot/blob/master/LICENSE
+[coc]: https://github.com/thevynk/discord-bot/blob/master/CODE_OF_CONDUCT.md
+[license]: https://github.com/thevynk/discord-bot/blob/master/LICENSE
 [email]: mailto:0xmrnight@gmail.com
 [discord]: https://discord.gg/ZA4hGY6hXg
-[fork]: https://github.com/mrnightdev/discord-bot/fork
+[fork]: https://github.com/thevynk/discord-bot/fork
 [github-pr]: https://docs.github.com/en/github/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request-from-a-fork
