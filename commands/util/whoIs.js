@@ -14,13 +14,8 @@ module.exports = class WhoIs extends Command {
     const { guild, channel } = message;
     const user = message.mentions.users.first() || message.member.user;
     const member = guild.members.cache.get(user.id);
-    if (member.nickname) {
-      var Name = member.nickname;
-    } else {
-      var Name = member.username;
-    }
     const Embed = new MessageEmbed()
-      .setAuthor(`User description for ${Name}`, user.displayAvatarURL())
+      .setAuthor(`User description for ${user.username}`, user.displayAvatarURL())
       .addFields(
         {
           name: "User Tag",
