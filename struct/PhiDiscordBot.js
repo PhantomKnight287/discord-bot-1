@@ -22,6 +22,8 @@ class PhiDiscordBot extends CommandoClient {
         .registerGroups([
           ["util", "Basic utility commands"],
           ["mod", "Moderation commands"],
+          ["info", "Information commands"],
+          ["misc", "Miscellaneous commands"],
         ])
         .registerDefaultCommands({
           ping: false,
