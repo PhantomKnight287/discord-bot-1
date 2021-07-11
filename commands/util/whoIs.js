@@ -5,17 +5,22 @@ module.exports = class WhoIs extends Command {
   constructor(client) {
     super(client, {
       name: "whois",
-      group: "util",
+      group: "info",
       memberName: "whois",
       description: "Gives information about a user",
+      guildOnly: true,
     });
   }
+
   async run(message) {
     const { guild, channel } = message;
     const user = message.mentions.users.first() || message.member.user;
     const member = guild.members.cache.get(user.id);
     const Embed = new MessageEmbed()
-      .setAuthor(`User description for ${user.username}`, user.displayAvatarURL())
+      .setAuthor(
+        `User description for ${user.username}`,
+        user.displayAvatarURL()
+      )
       .addFields(
         {
           name: "User Tag",
