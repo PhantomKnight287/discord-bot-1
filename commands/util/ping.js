@@ -1,4 +1,5 @@
 const { Command } = require("discord.js-commando");
+const { MessageEmbed } = require("discord.js");
 
 module.exports = class PingCommand extends Command {
   constructor(client) {
@@ -15,9 +16,17 @@ module.exports = class PingCommand extends Command {
   }
 
   async run(message) {
-    const pingMsg = await message.say("Pinging...");
-    return pingMsg.edit(
-      `:ping_pong: Pong! \`${Math.round(this.client.ws.ping)}ms\``
-    );
+    const pingEmbed = new MessageEmbed()
+      .setTitle("Pinging...")
+      .setColor("#ffffff");
+    const embed = new MessageEmbed()
+      .setTitle("Ping")
+      .setDescription(
+        `:ping_pong: Pong! \`${Math.round(this.client.ws.ping)}ms\``
+      )
+      .setColor("#1ee0eb");
+    await message.say(pingEmbed).then((m) => {
+      m.edit(embed);
+    });
   }
 };
