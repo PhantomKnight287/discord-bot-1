@@ -28,17 +28,20 @@ module.exports = class UnmuteCommand extends Command {
 
             memberTarget.roles.remove(muteRole.id)
             memberTarget.roles.add(mainRole.id)
-            
+
             var muteEmbed = new Discord.MessageEmbed()
                 .setColor('#FFFF00')
                 .setDescription(`${target} has been unmuted`)
                 .setFooter(`Muted by ${message.author.tag}`)
             message.channel.send(muteEmbed)
         } else {
-            message.channel.send('Cant find that member')
+            var muteEmbed = new Discord.MessageEmbed()
+                .setColor('#FFFF00')
+                .setDescription('Please mention a member to unmute')
+            message.channel.send(muteEmbed)
         }
 
-        
+
 
     }
 };

@@ -1,5 +1,5 @@
 const { Command } = require('discord.js-commando');
-const Discord  = require('discord.js');
+const Discord = require('discord.js');
 
 module.exports = class MuteCommand extends Command {
     constructor(client) {
@@ -29,25 +29,27 @@ module.exports = class MuteCommand extends Command {
             if (memberTarget.bannable) {
                 memberTarget.roles.remove(mainRole.id)
                 memberTarget.roles.add(muteRole.id)
-                
+
                 var muteEmbed = new Discord.MessageEmbed()
                     .setColor('#FF000')
                     .setDescription(`${target} has been muted`)
                     .setFooter(`Muted by ${message.author.tag}`)
                 message.channel.send(muteEmbed)
 
-            }else{
+            } else {
                 var muteEmbed = new Discord.MessageEmbed()
                     .setColor('#FFF00')
                     .setDescription('I cant mute that user')
                     .setFooter(`Muted by ${message.author.tag}`)
                 message.channel.send(muteEmbed)
             }
-           
+
         }
         else {
-            message.channel.send('Cant find that member')
-
+            var muteEmbed = new Discord.MessageEmbed()
+                .setColor('#FFF00')
+                .setDescription('Please mention a member to mute')
+            message.channel.send(muteEmbed)
         }
 
     }
