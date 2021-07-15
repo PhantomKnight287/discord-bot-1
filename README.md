@@ -9,6 +9,10 @@
   </a>
   <a href="https://github.com/discordjs/discord.js">
     <img alt="Discord.js" src="https://img.shields.io/badge/discord-js-F7DF1E.svg">
+  </a>
+  <a href="./CODE_OF_CONDUCT.md">
+    <img alt="Contributor Covenant" src="https://img.shields.io/badge/Contributor%20Covenant-2.0-ff3364.svg">
+  </a>
 </p>
 
 A discord bot powered by [discord.js](https://github.com/discordjs/discord.js) and the [commando](https://github.com/discordjs/Commando) framework.
