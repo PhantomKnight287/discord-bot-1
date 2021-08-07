@@ -23,7 +23,7 @@ Join our [discord server][server-invite] to see the bot in action!
 
 **Requirements**:
 
-Node v14+ <br />
+Node v16.6+ <br />
 npm (ships with node)
 
 ```bash
