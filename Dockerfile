@@ -1,4 +1,4 @@
-FROM node:14
+FROM node:latest
 LABEL maintainer="0xmrnight@gmail.com"
 
 # Install dependencies
